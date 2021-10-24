@@ -23,7 +23,7 @@ public class DBConnector {
                 return conn;
 
             } catch (ClassNotFoundException | SQLException ex) {
-                System.out.println(ex.getMessage());
+                UserDaoIml.lastMsg =ex.getMessage();
             }
         }
         UserDaoIml.lastMsg = "Database Connection Failed";

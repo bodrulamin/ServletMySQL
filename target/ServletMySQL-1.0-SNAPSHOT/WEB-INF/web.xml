@@ -4,38 +4,33 @@
         <servlet-name>HomeController</servlet-name>
         <servlet-class>com.example.controller.HomeController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductAddController</servlet-name>
+        <servlet-class>com.example.controller.ProductAddController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/</url-pattern>
         <url-pattern>/home</url-pattern>
-     </servlet-mapping>
-    
-    
+    </servlet-mapping>
     <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>com.example.controller.LoginController</servlet-class>
     </servlet>
-    
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/views/login</url-pattern>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
- 
-    
     <servlet>
         <servlet-name>LogoutController</servlet-name>
         <servlet-class>com.example.controller.LogoutController</servlet-class>
     </servlet>
- 
     <servlet-mapping>
         <servlet-name>LogoutController</servlet-name>
         <url-pattern>/views/logout</url-pattern>
         <url-pattern>/logout</url-pattern>
-
     </servlet-mapping>
-
-  
     <servlet>
         <servlet-name>Registration</servlet-name>
         <servlet-class>com.example.controller.RegistrationController</servlet-class>
@@ -43,8 +38,12 @@
     <servlet-mapping>
         <servlet-name>Registration</servlet-name>
         <url-pattern>/register</url-pattern>
+        <url-pattern>/views/register</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>ProductAddController</servlet-name>
+        <url-pattern>/addProduct</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

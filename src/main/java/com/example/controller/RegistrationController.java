@@ -18,7 +18,13 @@ import com.example.dao.IUserDao;
  public class RegistrationController extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+                resp.sendRedirect("/views/registration.jsp");
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (req.getParameter("fullname") != null) {
             String fullname = req.getParameter("fullname");
             String username = req.getParameter("username");

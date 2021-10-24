@@ -15,7 +15,7 @@ public class HomeController extends HttpServlet {
         if (req.getSession().getAttribute("user") == null) {
             req.getRequestDispatcher("/views/login.jsp").forward(req, resp);
         } else {
-            req.getSession().setAttribute("n", "bodrulvai");
+           // req.getSession().setAttribute("n", "bodrulvai");
             req.getRequestDispatcher("/views/home.jsp").forward(req, resp);
         }
 
