@@ -2,7 +2,7 @@
 JSP, Servlet and MySQL as  backend. 
 
 ## create tables in database `cms`
-#### table: users
+####     table: users
 ```
 CREATE TABLE `users` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -13,7 +13,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `username_UNIQUE` (`username`)
 );
 ```
-#### table: users
+####     table: products
 ```
 CREATE TABLE `products` (
   `id` bigint NOT NULL AUTO_INCREMENT,
