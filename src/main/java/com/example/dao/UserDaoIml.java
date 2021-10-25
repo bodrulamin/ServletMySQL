@@ -35,7 +35,6 @@ public class UserDaoIml implements IUserDao {
         }
         return null;
     }
-
     @Override
     public User getUser(String username) {
         try {

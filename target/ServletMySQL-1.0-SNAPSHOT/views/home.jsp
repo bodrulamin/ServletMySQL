@@ -1,19 +1,11 @@
-<%-- 
-    Document   : home
-    Created on : Oct 23, 2021, 9:48:37 PM
-    Author     : b
---%>
-
 <%@page import="com.example.dao.UserDaoIml"%>
 <%@page import="com.example.model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <%
     if (request.getSession().getAttribute("user") == null) {
         response.sendRedirect("/views/login.jsp");
     }
 %>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,17 +23,12 @@
                     Product Quantity :<input class="form-control" type="text" name="quantity"/> 
                     <button class="btn btn-primary">Add Product</button>
                 </form>
-
-
             </div>
             Logged in as ${user.getUsername()}
+            Password ${user.getPassword()}
             <a href="logout">Logout</a>
-
             ${n}
-
-
         </div>
         <%@include file="bsFoot.html" %>
-
     </body>
 </html>
