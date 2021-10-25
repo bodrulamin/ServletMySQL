@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.ProductDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.071 s <<< FAILURE! - in com.example.ProductDaoTest
+addProduct(com.example.ProductDaoTest)  Time elapsed: 0.834 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.ProductDaoTest.addProduct(ProductDaoTest.java:20)
+
