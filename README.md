@@ -14,7 +14,7 @@ CREATE TABLE `users` (
 );
 ```
 #### table: users
-
+```
 CREATE TABLE `products` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `name` varchar(20) DEFAULT NULL,
@@ -23,3 +23,4 @@ CREATE TABLE `products` (
   `remarks` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
+```
